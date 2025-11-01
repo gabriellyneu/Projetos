@@ -121,7 +121,7 @@ export const html = `<!DOCTYPE html>
 
     if (layer) map.removeLayer(layer);
     const latlngs = coords.map(p => [p[1], p[0]]);
-    layer = L.polygon(latlngs, {color:'#fff'}).addTo(map);
+    layer = L.polygon(latlngs, {color:'#7c69d1ff'}).addTo(map);
     map.fitBounds(layer.getBounds(), {padding:[20,20]});
   });
 </script>
